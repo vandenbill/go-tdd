@@ -10,3 +10,13 @@ tdd will be very difficult to do if we don't have clear requirements in our syst
 - if we dequeue from queue, the data must be in the last order
 
 above are the requirements of a queue, even though the requirements above do not fully describe what is happening in the queue, but it is enough for us to start writing tests, and refactor
+
+## go-cov & gocov-html
+also, i found good library for testing and coverage repot
+- go-cov : https://github.com/axw/gocov
+- gocov-html : https://github.com/matm/gocov-html
+
+here command for generate nice ui for coverage report (in this case 100%)
+```bash
+gocov test | gocov-html -t golang > cov-report.html
+```
