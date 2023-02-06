@@ -30,9 +30,18 @@ func TestQueue(t *testing.T) {
 		assert.Equal(t, queue.ErrNoSuchElement, err)
 	})
 
+	t.Run("test queue that only have one node", func(t *testing.T) {
+		n := queue.NewNode(9823783)
+		q.Enqueue(n)
+
+		v, err := q.Dequeue()
+		assert.Nil(t, err)
+		assert.Equal(t, n.Value, v)
+	})
+
 	n1 := queue.NewNode(1)
-	n2 := queue.NewNode(2)
 	n3 := queue.NewNode(3)
+	n2 := queue.NewNode(2)
 	n4 := queue.NewNode(4)
 	n5 := queue.NewNode(5)
 	q.Enqueue(n1)
