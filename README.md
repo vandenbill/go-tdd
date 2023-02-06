@@ -2,7 +2,7 @@
 TDD is currently a software development method that is widely used considering that the results of products developed using TDD will have superior quality and minimal bugs because it breaks a problem into smaller and more manageable parts, thus helping the problem solving process. here i want to try using TTD on queue data structure.
 
 ## queue requirement
-tdd will be very difficult to do if we don't have clear requirements in our system (even though tdd also helps us imagine what our requirements are), so let's describe what is happening in our queue system
+tdd will be very difficult to do if we don't have clear requirements in our system (even though tdd also helps us figure out what our requirements are), so let's describe what is happening in our queue system
 - an queue has 0 length on construction
 - an queue is empty on construction
 - if we dequeue an empty queue, we got an error: ErrNoSuchElement
